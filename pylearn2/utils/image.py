@@ -9,6 +9,8 @@ from theano.compat.six.moves import xrange
 from theano.compat.six import string_types
 import warnings
 try:
+    import matplotlib
+    matplotlib.use('agg')
     import matplotlib.pyplot as plt
     import matplotlib.axes
 except (RuntimeError, ImportError, TypeError) as matplotlib_exception:
